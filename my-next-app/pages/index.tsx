@@ -18,14 +18,14 @@ export default function Home() {
           Learn <a href="https://nextjs.org">Next.js!</a>
         </h3>
         <div className='my-3'>
-        <Image
-          src="/images/stay-positive.jpg"
-          height={192 * 2}
-          width={108 * 2}
-          alt="Stay Positive"
-          className='my-3 rounded-full'
-        />
-        </div>        
+          <Image
+            src="/images/stay-positive.jpg"
+            height={192 * 2}
+            width={108 * 2}
+            alt="Stay Positive"
+            className='rounded-full'
+          />
+        </div>
 
         <p className={styles.description}>
           Data fetching{' '}
@@ -33,10 +33,12 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <Link href="/css-in-js">
+            <a className={styles.card}>
+              <h2>Css In Js &rarr;</h2>
+              <p>twin next styled components</p>
+            </a>
+          </Link>
 
           <a href="https://nextjs.org/learn" className={styles.card}>
             <h2>Learn &rarr;</h2>
